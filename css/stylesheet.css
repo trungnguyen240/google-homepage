@@ -101,9 +101,10 @@ ul {
   display: inline;
   margin: 0 auto;
   flex: 10;
-  height: 34px;
+  height: 30px;
   border: none;
   font-size: 16px;
+  background-color: transparent;
 }
 
 #search-query:focus {
