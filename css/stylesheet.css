@@ -12,58 +12,76 @@ header {
 }
 
 #left-navbar {
+  display: flex;
   float: left;
+  padding-top: 15px;
+  line-height: 24px;
 }
 
 #right-navbar {
+  display: flex;
   float: right;
+  line-height: 24px;
+}
+
+#right-navbar-links {
+  padding-top: 15px;
+}
+
+#left-navbar a {
+  padding-left: 20px;
+}
+
+#right-navbar-links a {
+  padding-right: 20px;
 }
 
 ul {
   list-style: none;
 }
 
-ul#left-navbar li {
+#right-navbar-icons {
   display: inline;
+  padding-top: 15px;
 }
 
-ul#right-navbar li {
-  display: inline;
-}
-
-#apps-icon {
-  height: 30px;
+#apps-icon, #user-icon {
+  height: 24px;
   width: auto;
-}
-
-.navbar-list-style {
-  font-size: 13px;
   padding-right: 20px;
 }
 
 #google-main {
+  display: block;
   text-align: center;
   margin: auto;
 }
 
 #search-bar {
+  position: relative;
+  background-color: white;
   display: flex;
-  margin: 30px auto 30px auto;
+  margin: 30px auto;
   width: 560px;
   height: 40px;
   border: 1px solid #dfe1e5;
   border-radius: 20px;
   align-items: center;
+  z-index: 1;
 }
 
 #search-bar:hover {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
+#google-logo {
+  text-align: center;
+  padding-top: 200px;
+}
+
 #logo {
   height: 92px;
-  width; auto;
-  padding-top: 200px;
+  width: auto;
 }
 
 #search-icon {
@@ -93,6 +111,7 @@ ul#right-navbar li {
 }
 
 input[type=submit] {
+  position: relative;
   display: inline;
   font-size: 14px;
   background-color: #f2f2f2;
@@ -102,6 +121,7 @@ input[type=submit] {
   color: #5F6368;
   height: 34px;
   margin: 0 2.5px 30px 2.5px;
+  z-index: 1;
 }
 
 input[type=submit]:hover {
